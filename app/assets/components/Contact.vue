@@ -3,6 +3,7 @@
 import '~/assets/css/contact.css';
 
 const contactMethods = [
+  { icon: '📥', label: 'Projets', value: 'Projets', link: 'https://works.tim-d.fr' },
   { icon: '📧', label: 'Email', value: 'contact@tim-d.fr', link: 'mailto:contact@tim-d.fr' },
   { icon: '💼', label: 'LinkedIn', value: '/in/timeo.d', link: 'https://linkedin.com/in/timeo-d' },
   { icon: '🐙', label: 'GitHub', value: 'TimDcmtr', link: 'https://github.com/TimDcmtr' },
