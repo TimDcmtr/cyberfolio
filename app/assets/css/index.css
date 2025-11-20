@@ -1,0 +1,373 @@
+/* Responsive */
+@media (max-width: 1024px) {
+    .h-bg {
+        flex-direction: column;
+        justify-content: center;
+        gap: 5vh;
+        padding: 10vh 5vw;
+    }
+
+    .h-bg img {
+        width: 300px;
+        height: 300px;
+        margin: 0;
+    }
+
+    .hero {
+        margin: 0;
+        align-items: center;
+        text-align: center;
+        height: auto;
+    }
+
+    .h-name {
+        font-size: 35px;
+    }
+
+    .s-list {
+        width: 90vw;
+        gap: 3vh;
+    }
+
+    .s-item {
+        width: 40vw;
+        min-width: 250px;
+        height: auto;
+        min-height: 250px;
+        padding: 3vh 3vw;
+    }
+
+    .a-grid {
+        grid-template-columns: 1fr;
+        gap: 3vh;
+    }
+
+    .a-main,
+    .a-stats-grid,
+    .a-goals,
+    .a-interests {
+        grid-column: 1 / -1;
+    }
+
+    .a-stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .c-content {
+        grid-template-columns: 1fr;
+        gap: 5vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .h-bg {
+        padding: 5vh 5vw;
+    }
+
+    .h-bg img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .h-name {
+        font-size: 28px;
+    }
+
+    .h-name h1 {
+        text-shadow: 3px 3px black;
+    }
+
+    .h-hiring {
+        font-size: 9px;
+        padding: 1.5vh 3vw;
+    }
+
+    .s-title,
+    .a-title,
+    .c-title {
+        font-size: 36px;
+    }
+
+    .a-subtitle,
+    .c-subtitle {
+        font-size: 16px;
+    }
+
+    .s-item {
+        width: 85vw;
+        padding: 3vh 5vw;
+    }
+
+    .s-desc {
+        gap: 1vh;
+        justify-content: center;
+    }
+
+    .s-desc span {
+        font-size: 14px;
+        padding: 1vh 2vw;
+    }
+
+    .a-container,
+    .c-container {
+        padding: 0 6vw;
+    }
+
+    .a-card,
+    .c-info-card {
+        padding: 3vh 5vw;
+    }
+
+    .a-text h2,
+    .a-goals h2,
+    .a-interests h2,
+    .c-intro h2 {
+        font-size: 24px;
+    }
+
+    .a-text p,
+    .c-intro p {
+        font-size: 15px;
+    }
+
+    .stat-number,
+    .stat-icon {
+        font-size: 28px;
+    }
+
+    .goal-item {
+        gap: 3vw;
+        font-size: 15px;
+    }
+
+    .interests-tags {
+        gap: 1.5vh;
+    }
+
+    .interest-tag {
+        font-size: 14px;
+        padding: 1.5vh 3vw;
+    }
+
+    .c-method {
+        padding: 3vh 5vw;
+        gap: 4vw;
+    }
+
+    .method-icon {
+        font-size: 32px;
+    }
+
+    .method-value {
+        font-size: 16px;
+    }
+
+    .method-label {
+        font-size: 12px;
+    }
+
+    .c-availability {
+        gap: 3vw;
+        padding: 2vh 4vw;
+        font-size: 14px;
+    }
+
+    .footer-text {
+        font-size: 16px;
+    }
+
+    .footer-copyright {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .h-bg {
+        padding: 3vh 4vw;
+    }
+
+    .h-bg img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .h-name {
+        font-size: 24px;
+        gap: 0.5vh;
+    }
+
+    .h-hiring {
+        font-size: 8px;
+        padding: 1.5vh 4vw;
+    }
+
+    .skills,
+    .about,
+    .contact {
+        padding: 10vh 0;
+    }
+
+    .s-title,
+    .a-title,
+    .c-title {
+        font-size: 28px;
+        margin-bottom: 6vh;
+    }
+
+    .a-subtitle,
+    .c-subtitle {
+        font-size: 14px;
+        padding: 0 2vw;
+    }
+
+    .s-item {
+        width: 90vw;
+        padding: 3vh 6vw;
+        min-height: 220px;
+    }
+
+    .s-item h3 {
+        font-size: 18px;
+        padding-bottom: 2vh;
+    }
+
+    .s-desc span {
+        font-size: 13px;
+        padding: 1vh 3vw;
+    }
+
+    .a-header,
+    .c-header {
+        margin-bottom: 6vh;
+    }
+
+    .a-card,
+    .c-info-card {
+        padding: 3vh 6vw;
+    }
+
+    .a-text h2,
+    .a-goals h2,
+    .a-interests h2,
+    .c-intro h2 {
+        font-size: 20px;
+        margin-bottom: 2vh;
+    }
+
+    .a-text p,
+    .c-intro p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .a-stats-grid {
+        gap: 2vh 2vw;
+    }
+
+    .a-stat {
+        padding: 2.5vh 3vw;
+    }
+
+    .stat-number,
+    .stat-icon {
+        font-size: 24px;
+    }
+
+    .stat-label {
+        font-size: 11px;
+    }
+
+    .goal-item {
+        gap: 4vw;
+        font-size: 14px;
+        padding: 1.5vh 2vw;
+    }
+
+    .goal-bullet {
+        font-size: 20px;
+    }
+
+    .interests-tags {
+        gap: 1.5vh 2vw;
+    }
+
+    .interest-tag {
+        font-size: 13px;
+        padding: 1.2vh 4vw;
+    }
+
+    .c-content {
+        gap: 4vh;
+    }
+
+    .c-info-card {
+        gap: 3vh;
+    }
+
+    .c-method {
+        padding: 2.5vh 5vw;
+        gap: 4vw;
+    }
+
+    .c-method:hover {
+        transform: translateX(5px);
+    }
+
+    .method-icon {
+        font-size: 28px;
+    }
+
+    .method-value {
+        font-size: 14px;
+    }
+
+    .method-label {
+        font-size: 11px;
+    }
+
+    .method-arrow {
+        font-size: 24px;
+    }
+
+    .c-availability {
+        gap: 4vw;
+        padding: 2vh 5vw;
+        font-size: 13px;
+    }
+
+    .status-indicator {
+        width: 10px;
+        height: 10px;
+    }
+
+    .c-footer {
+        padding-top: 6vh;
+    }
+
+    .footer-text {
+        font-size: 14px;
+    }
+
+    .footer-copyright {
+        font-size: 12px;
+    }
+}
+
+@media (hover: none) {
+
+    .s-item:hover,
+    .a-card:hover,
+    .a-stat:hover,
+    .goal-item:hover,
+    .interest-tag:hover,
+    .c-method:hover,
+    .c-info-card:hover {
+        transform: none;
+    }
+
+    .s-desc span:hover {
+        color: inherit;
+        border-color: rgba(255, 255, 255, 0.2);
+        box-shadow: none;
+    }
+}

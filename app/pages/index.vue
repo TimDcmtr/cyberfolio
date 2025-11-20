@@ -1,3 +1,19 @@
+<script setup>
+
+import '~/assets/css/index.css';
+
+import Hero from '~/assets/components/Hero.vue';
+import Skills from '~/assets/components/Skills.vue';
+import About from '~/assets/components/About.vue';
+import Contact from '~/assets/components/Contact.vue';
+
+</script>
+
 <template>
-  <h1>Accueil</h1>
+
+  <Hero />
+  <Skills />
+  <About />
+  <Contact />
+
 </template>

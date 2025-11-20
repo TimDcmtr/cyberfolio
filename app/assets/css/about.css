@@ -1,0 +1,235 @@
+.about,
+.contact {
+    padding: 15vh 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.about {
+    background-color: rgb(63, 0, 0);
+    box-shadow: inset black 0 0 500px 200px;
+}
+
+.contact {
+    background-color: black;
+    padding-bottom: 10vh;
+}
+
+.a-container,
+.c-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 5vw;
+    position: relative;
+    z-index: 1;
+}
+
+.a-header,
+.c-header {
+    text-align: center;
+    margin-bottom: 10vh;
+}
+
+.a-title,
+.c-title {
+    font-size: 48px;
+    margin-bottom: 2vh;
+    background: linear-gradient(135deg, white, var(--color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.a-subtitle,
+.c-subtitle {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.c-subtitle {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.a-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 3vh 2vw;
+}
+
+.a-card,
+.c-info-card {
+    background: linear-gradient(135deg, rgb(15, 15, 15), rgb(20, 20, 20));
+    border: 2px solid rgba(128, 128, 128, 0.15);
+    border-radius: 25px;
+    padding: 4vh 3vw;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-glow,
+.stat-glow,
+.method-glow {
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(177, 20, 20, 0.15), transparent 70%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+    top: -50%;
+    left: -50%;
+}
+
+.a-card:hover .card-glow,
+.a-stat:hover .stat-glow,
+.c-method:hover .method-glow {
+    opacity: 1;
+}
+
+.a-card:hover,
+.c-info-card:hover {
+    border-color: rgba(177, 20, 20, 0.4);
+    transform: translateY(-5px);
+    box-shadow: 0 20px 60px rgba(177, 20, 20, 0.15);
+}
+
+.a-main {
+    grid-column: 1 / 9;
+}
+
+.a-text h2,
+.a-goals h2,
+.a-interests h2,
+.c-intro h2 {
+    font-size: 28px;
+    margin-bottom: 3vh;
+    color: var(--color);
+}
+
+.a-text p,
+.c-intro p {
+    line-height: 1.9;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 2.5vh;
+    font-size: 17px;
+}
+
+.a-text p:last-child,
+.c-intro p:last-child {
+    margin-bottom: 0;
+}
+
+.highlight {
+    color: var(--color);
+    font-weight: 600;
+    text-shadow: var(--color) 0 0 10px;
+}
+
+.a-stats-grid {
+    grid-column: 9 / 13;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2vh 1vw;
+}
+
+.a-stat {
+    background: linear-gradient(135deg, rgb(20, 20, 20), rgb(15, 15, 15));
+    border: 2px solid rgba(128, 128, 128, 0.15);
+    border-radius: 20px;
+    padding: 3vh 1.5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1vh;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.a-stat:hover {
+    transform: scale(1.08);
+    border-color: var(--color);
+    box-shadow: 0 0 30px rgba(177, 20, 20, 0.3);
+}
+
+.stat-icon {
+    font-size: 32px;
+    filter: grayscale(0.3);
+}
+
+.stat-number {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--color);
+    text-shadow: var(--color) 0 0 15px;
+}
+
+.stat-label {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+}
+
+.a-goals {
+    grid-column: 1 / 7;
+    cursor: default;
+}
+
+.goals-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.goal-item {
+    display: flex;
+    align-items: center;
+    gap: 1.5vw;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.8);
+    transition: all 0.3s ease;
+    padding: 1.5vh 1vw;
+    border-radius: 10px;
+}
+
+.goal-item:hover {
+    background: rgba(177, 20, 20, 0.1);
+    transform: translateX(10px);
+}
+
+.goal-bullet {
+    color: var(--color);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.a-interests {
+    grid-column: 7 / 13;
+}
+
+.interests-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5vh 1vw;
+}
+
+.interest-tag {
+    padding: 1.5vh 2vw;
+    background: rgba(177, 20, 20, 0.1);
+    border: 1px solid rgba(177, 20, 20, 0.3);
+    border-radius: 50px;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.9);
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+.interest-tag:hover {
+    background: rgba(177, 20, 20, 0.2);
+    border-color: var(--color);
+    box-shadow: 0 0 20px rgba(177, 20, 20, 0.3);
+    transform: translateY(-3px);
+}

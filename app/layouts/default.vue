@@ -1,5 +1,9 @@
-<script>
-    import '~/assets/css/style.css'
+<script setup>
+import '~/assets/css/style.css'
+
+useHead({
+  title: "leMecha - Portfolio",
+})
 </script>
 
 <template>

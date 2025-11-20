@@ -1,0 +1,153 @@
+.c-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4vw;
+    margin-bottom: 10vh;
+}
+
+.c-info-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 4vh;
+}
+
+.c-availability {
+    display: flex;
+    align-items: center;
+    gap: 1.5vw;
+    padding: 2vh 2vw;
+    background: rgba(177, 20, 20, 0.1);
+    border: 1px solid rgba(177, 20, 20, 0.3);
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.status-indicator {
+    width: 12px;
+    height: 12px;
+    background: var(--color);
+    border-radius: 50%;
+    box-shadow: 0 0 15px var(--color);
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.6;
+        transform: scale(1.2);
+    }
+}
+
+.c-methods {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.c-method {
+    background: linear-gradient(135deg, rgb(15, 15, 15), rgb(20, 20, 20));
+    border: 2px solid rgba(128, 128, 128, 0.15);
+    border-radius: 20px;
+    padding: 3vh 2.5vw;
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.c-method:hover {
+    border-color: var(--color);
+    transform: translateX(10px);
+    box-shadow: 0 10px 40px rgba(177, 20, 20, 0.2);
+}
+
+.c-method:hover .method-arrow {
+    transform: translateX(8px);
+    opacity: 1;
+}
+
+.method-icon {
+    font-size: 36px;
+    flex-shrink: 0;
+}
+
+.method-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vh;
+}
+
+.method-label {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.method-value {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 600;
+}
+
+.method-arrow {
+    font-size: 28px;
+    color: var(--color);
+    opacity: 0.4;
+    transition: all 0.4s ease;
+    flex-shrink: 0;
+}
+
+.c-footer {
+    text-align: center;
+    padding-top: 8vh;
+    border-top: 1px solid rgba(128, 128, 128, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.footer-text {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.heart {
+    color: var(--color);
+    animation: heartbeat 1.5s ease-in-out infinite;
+}
+
+@keyframes heartbeat {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    25% {
+        transform: scale(1.2);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+}
+
+.footer-copyright {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.4);
+}
