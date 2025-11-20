@@ -151,3 +151,11 @@
     font-size: 14px;
     color: rgba(255, 255, 255, 0.4);
 }
+
+@media (max-width: 1024px) {
+
+    .c-content {
+        grid-template-columns: 1fr;
+        gap: 5vh;
+    }
+}

@@ -1,5 +1,6 @@
 <script setup>
 import '~/assets/css/hero.css';
+
 import me from '~/assets/images/me.png';
 </script>
 

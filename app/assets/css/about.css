@@ -233,3 +233,21 @@
     box-shadow: 0 0 20px rgba(177, 20, 20, 0.3);
     transform: translateY(-3px);
 }
+
+@media (max-width: 1024px) {
+    .a-grid {
+        grid-template-columns: 1fr;
+        gap: 3vh;
+    }
+
+    .a-main,
+    .a-stats-grid,
+    .a-goals,
+    .a-interests {
+        grid-column: 1 / -1;
+    }
+
+    .a-stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

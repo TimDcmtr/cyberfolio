@@ -1,7 +1,4 @@
 <script setup>
-
-import '~/assets/css/index.css';
-
 import Hero from '~/assets/components/Hero.vue';
 import Skills from '~/assets/components/Skills.vue';
 import About from '~/assets/components/About.vue';
