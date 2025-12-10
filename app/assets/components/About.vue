@@ -16,7 +16,7 @@ const stats = [
         <div class="a-container">
             <div class="a-header">
                 <h1 class="a-title">A propos de moi</h1>
-                <div class="a-subtitle">Passionné par la sécurité offensive et la protection des systèmes</div>
+                <div class="a-subtitle">Passionné par la sécurité et la protection des systèmes d'information</div>
             </div>
 
             <div class="a-grid">
@@ -25,7 +25,7 @@ const stats = [
                     <div class="a-text">
                         <h2>🛡️ Mon parcours</h2>
                         <p>
-                            Depuis mes débuts dans le monde de la cybersécurité, j'ai développé une passion dévorante
+                            J'ai développé une passion dévorante
                             pour le <span class="highlight">pentesting</span> et le <span
                                 class="highlight">renseignement</span>.
                             Chaque CTF est une nouvelle énigme à résoudre, chaque système une forteresse à comprendre.
